@@ -1,0 +1,42 @@
+= Multi OS Font Plugin =
+
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=1337
+
+== Description ==
+
+This plug-in set's the font used depending on the operating system / windowing system used. It also contains a smaller and larger font to zoom in and out. It is very helpful if you use GVim with more then one OS, display resolutions etc. pp.
+
+You can easily expand the plugin for more OS's or fonts.
+
+== Installation ==
+
+Install from https://github.com/krischik/vim-fonts using dein (https://github.com/Shougo/dein.vim) or similar:
+
+    call dein#begin('$HOME/vimfiles/bundles')
+    call dein#add('krischik/vim-fonts')
+    call dein#end()
+    call dein#install()
+
+== References ==
+
+{|
+|+ Multi OS Font Plugin
+|-
+| Vim-Script	|| https://www.vim.org/scripts/script.php?script_id=1337
+|-
+| Source	|| https://github.com/krischik/vim-fonts
+|-
+| Wiki		|| https://github.com/krischik/vim-fonts/wiki
+|-
+| Releases	|| https://github.com/krischik/vim-fonts/releases
+|-
+| Issues	|| https://github.com/krischik/vim-fonts/issues
+|-
+| Discussions	|| https://github.com/krischik/vim-fonts/discussions
+|}
+
+==Comments==
+
+/* vim: set textwidth=0 wrap tabstop=8 shiftwidth=4 softtabstop=4 noexpandtab : */
+/* vim: set filetype=mediawiki fileencoding=utf8 fileformat=unix foldmethod=marker : */
+/* vim: set nospell spelllang=en_gb : */
