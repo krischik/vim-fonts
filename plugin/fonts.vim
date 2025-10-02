@@ -36,9 +36,9 @@ else
 	    let g:Font_S2="96 45"
 	    let g:Font_S3="96 42"
 	elseif has ("gui_mac")
-	    let g:Font_L1="SF Mono Regular:h14"
-	    let g:Font_L2="SF Mono Regular:h16"
-	    let g:Font_L3="SF Mono Regular:h18"
+	    let g:Font_L1="DejaVuSansMono:h14,SF Mono Regular:h14"
+	    let g:Font_L2="DejaVuSansMono:h16,SF Mono Regular:h16"
+	    let g:Font_L3="DejaVuSansMono:h18,SF Mono Regular:h18"
 	    let g:Font_U1=g:Font_L1
 	    let g:Font_U2=g:Font_L2
 	    let g:Font_U3=g:Font_L3
@@ -46,9 +46,9 @@ else
 	    let g:Font_S2="135 50"
 	    let g:Font_S3="96 42"
 	elseif has ("gui_macvim")
-	    let g:Font_L1="SF Mono Regular:h14"
-	    let g:Font_L2="SF Mono Regular:h16"
-	    let g:Font_L3="SF Mono Regular:h18"
+	    let g:Font_L1="DejaVuSansMono:h14,SF Mono Regular:h14"
+	    let g:Font_L2="DejaVuSansMono:h16,SF Mono Regular:h16"
+	    let g:Font_L3="DejaVuSansMono:h18,SF Mono Regular:h18"
 	    let g:Font_U1=g:Font_L1
 	    let g:Font_U2=g:Font_L2
 	    let g:Font_U3=g:Font_L3
@@ -56,12 +56,12 @@ else
 	    let g:Font_S2="135 50"
 	    let g:Font_S3="96 42"
 	elseif has ("gui_gtk")
-	    let g:Font_L1="Bitstream Vera Sans Mono 9"
-	    let g:Font_L2="Bitstream Vera Sans Mono 11"
-	    let g:Font_L3="Bitstream Vera Sans Mono 13"
-	    let g:Font_U1="Roboto Mono 9"
-	    let g:Font_U2="Roboto Mono 11"
-	    let g:Font_U3="Roboto Mono 13"
+	    let g:Font_L1="Bitstream Vera Sans Mono 9,Roboto Mono 9"
+	    let g:Font_L2="Bitstream Vera Sans Mono 11,Roboto Mono 11"
+	    let g:Font_L3="Bitstream Vera Sans Mono 13,Roboto Mono 13"
+	    let g:Font_U1=g:Font_L1
+	    let g:Font_U2=g:Font_L2
+	    let g:Font_U3=g:Font_L3
 	    let g:Font_S1="132 48"
 	    let g:Font_S2="96 42"
 	    let g:Font_S3="96 38"
