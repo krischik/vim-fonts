@@ -1,10 +1,12 @@
 "-------------------------------------------------------------------------------
 "  Description: Quick Font changer
-"    Copyright: Copyright (C) 2006 … 2022 Martin Krischik
+"    Copyright: Copyright (C) 2006 … 2025 Martin Krischik
 "   Maintainer: Martin Krischik
-"      Version: 1.5
+"      Version: 1.6
 "      History: 01.11.2006 MK Sun Solaris Support
 "               17.11.2022 MK Update git version to newest interation
+"               01.10.2025 MK Update to main font (DejaVu Sans Mono) and
+"                             OS dependent fallback font.
 "	 Usage: copy to plugin directory.
 "-------------------------------------------------------------------------------
 
@@ -26,9 +28,9 @@ else
 	    let g:Font_S2="96 45"
 	    let g:Font_S3="96 42"
 	elseif has ("gui_win32")
-	    let g:Font_L1="Consolas:h11:cDEFAULT"
-	    let g:Font_L2="Consolas:h13:cDEFAULT"
-	    let g:Font_L3="Consolas:h15:cDEFAULT"
+	    let g:Font_L1="DejaVu_Sans_Mono:h11:cANSI:qDRAFT,Consolas:h11:cDEFAULT"
+	    let g:Font_L2="DejaVu_Sans_Mono:h13:cANSI:qDRAFT,Consolas:h13:cDEFAULT"
+	    let g:Font_L3="DejaVu_Sans_Mono:h15:cANSI:qDRAFT,Consolas:h15:cDEFAULT"
 	    let g:Font_U1=g:Font_L1
 	    let g:Font_U2=g:Font_L2
 	    let g:Font_U3=g:Font_L3
@@ -36,9 +38,9 @@ else
 	    let g:Font_S2="96 45"
 	    let g:Font_S3="96 42"
 	elseif has ("gui_mac")
-	    let g:Font_L1="SF Mono Regular:h14"
-	    let g:Font_L2="SF Mono Regular:h16"
-	    let g:Font_L3="SF Mono Regular:h18"
+	    let g:Font_L1="DejaVuSansMono:h14,SF Mono Regular:h14"
+	    let g:Font_L2="DejaVuSansMono:h16,SF Mono Regular:h16"
+	    let g:Font_L3="DejaVuSansMono:h18,SF Mono Regular:h18"
 	    let g:Font_U1=g:Font_L1
 	    let g:Font_U2=g:Font_L2
 	    let g:Font_U3=g:Font_L3
@@ -46,9 +48,9 @@ else
 	    let g:Font_S2="135 50"
 	    let g:Font_S3="96 42"
 	elseif has ("gui_macvim")
-	    let g:Font_L1="SF Mono Regular:h14"
-	    let g:Font_L2="SF Mono Regular:h16"
-	    let g:Font_L3="SF Mono Regular:h18"
+	    let g:Font_L1="DejaVuSansMono:h14,SF Mono Regular:h14"
+	    let g:Font_L2="DejaVuSansMono:h16,SF Mono Regular:h16"
+	    let g:Font_L3="DejaVuSansMono:h18,SF Mono Regular:h18"
 	    let g:Font_U1=g:Font_L1
 	    let g:Font_U2=g:Font_L2
 	    let g:Font_U3=g:Font_L3
@@ -56,22 +58,22 @@ else
 	    let g:Font_S2="135 50"
 	    let g:Font_S3="96 42"
 	elseif has ("gui_gtk")
-	    let g:Font_L1="Bitstream Vera Sans Mono 9"
-	    let g:Font_L2="Bitstream Vera Sans Mono 11"
-	    let g:Font_L3="Bitstream Vera Sans Mono 13"
-	    let g:Font_U1="Roboto Mono 9"
-	    let g:Font_U2="Roboto Mono 11"
-	    let g:Font_U3="Roboto Mono 13"
+	    let g:Font_L1="Bitstream Vera Sans Mono 9,Roboto Mono 9"
+	    let g:Font_L2="Bitstream Vera Sans Mono 11,Roboto Mono 11"
+	    let g:Font_L3="Bitstream Vera Sans Mono 13,Roboto Mono 13"
+	    let g:Font_U1=g:Font_L1
+	    let g:Font_U2=g:Font_L2
+	    let g:Font_U3=g:Font_L3
 	    let g:Font_S1="132 48"
 	    let g:Font_S2="96 42"
 	    let g:Font_S3="96 38"
 	elseif has ("gui_kde")
-	    let g:Font_L1="Bitstream Vera Sans Mono/9/-1/5/50/0/0/0/1/0"
-	    let g:Font_L2="Bitstream Vera Sans Mono/11/-1/5/50/0/0/0/1/0"
-	    let g:Font_L3="Bitstream Vera Sans Mono/13/-1/5/50/0/0/0/1/0"
-	    let g:Font_U1="Roboto Mono Medium/9/-1/5/50/0/0/0/1/0"
-	    let g:Font_U2="Roboto Mono Medium/11/-1/5/50/0/0/0/1/0"
-	    let g:Font_U3="Roboto Mono Medium/13/-1/5/50/0/0/0/1/0"
+	    let g:Font_L1="Bitstream Vera Sans Mono/9/-1/5/50/0/0/0/1/0,Roboto Mono Medium/9/-1/5/50/0/0/0/1/0 "
+	    let g:Font_L2="Bitstream Vera Sans Mono/11/-1/5/50/0/0/0/1/0,Roboto Mono Medium/11/-1/5/50/0/0/0/1/0"
+	    let g:Font_L3="Bitstream Vera Sans Mono/13/-1/5/50/0/0/0/1/0,Roboto Mono Medium/13/-1/5/50/0/0/0/1/0"
+	    let g:Font_U1=g:Font_L1
+	    let g:Font_U2=g:Font_L2
+	    let g:Font_U3=g:Font_L3
 	    let g:Font_S1="132 49"
 	    let g:Font_S2="96 40"
 	    let g:Font_S3="96 35"
