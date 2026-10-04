@@ -1,3 +1,4 @@
 *.orig
 *.swp
 .backups
+default.profraw 
