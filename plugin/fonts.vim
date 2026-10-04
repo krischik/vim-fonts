@@ -55,13 +55,13 @@ else
 	    let g:Font_S1="160 60"
 	    let g:Font_S2="135 50"
 	    let g:Font_S3="96 42"
-	elseif has ("gui_gtk")
-	    let g:Font_L1="Bitstream Vera Sans Mono 9"
-	    let g:Font_L2="Bitstream Vera Sans Mono 11"
-	    let g:Font_L3="Bitstream Vera Sans Mono 13"
-	    let g:Font_U1="Roboto Mono 9"
-	    let g:Font_U2="Roboto Mono 11"
-	    let g:Font_U3="Roboto Mono 13"
+	elseif has ("gui_gtk") || has("gui_gtk2") || has("gui_gtk3")
+	    let g:Font_L1="DejaVu Sans Mono 9"
+	    let g:Font_L2="DejaVu Sans Mono 11"
+	    let g:Font_L3="DejaVu Sans Mono 13"
+	    let g:Font_U1=g:Font_L1
+	    let g:Font_U2=g:Font_L2
+	    let g:Font_U3=g:Font_L3
 	    let g:Font_S1="132 48"
 	    let g:Font_S2="96 42"
 	    let g:Font_S3="96 38"
